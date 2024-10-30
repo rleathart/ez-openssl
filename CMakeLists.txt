@@ -30,8 +30,8 @@ elseif (WIN32)
 
   target_include_directories(ez-openssl INTERFACE "${ossl_SOURCE_DIR}/include/win32")
   target_link_libraries(ez-openssl INTERFACE
-    "${ossl_SOURCE_DIR}/lib/win32/amd64/libcrypto.a"
-    "${ossl_SOURCE_DIR}/lib/win32/amd64/libssl.a"
+    "${ossl_SOURCE_DIR}/lib/win32/amd64/libcrypto.lib"
+    "${ossl_SOURCE_DIR}/lib/win32/amd64/libssl.lib"
     )
 else()
   message(FATAL_ERROR "${PROJECT_NAME} does not support your platform :(")
